@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="tc-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,6 +83,33 @@
         </div>
     </section>
 
+    <section id="projects" class="py-20 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 flex items-center">
+                <span class="w-8 h-1 bg-blue-600 mr-4"></span>
+                <span x-text="t('section_projects')"></span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border border-slate-200 rounded-xl bg-white overflow-hidden shadow-sm hover:shadow-lg transition">
+                    <img src="https://via.placeholder.com/400x200" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" x-text="t('project1_title')"></h3>
+                        <p class="text-slate-600 mb-4" x-text="t('project1_desc')"></p>
+                        <a href="#" class="text-blue-600 font-bold hover:underline">View Details</a>
+                    </div>
+                </div>
+                <div class="border border-slate-200 rounded-xl bg-white overflow-hidden shadow-sm hover:shadow-lg transition">
+                    <img src="https://via.placeholder.com/400x200" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" x-text="t('project2_title')"></h3>
+                        <p class="text-slate-600 mb-4" x-text="t('project2_desc')"></p>
+                        <a href="#" class="text-blue-600 font-bold hover:underline">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="faq" class="py-20 bg-slate-50" x-data="{ activeFaq: 1 }">
         <div class="max-w-3xl mx-auto px-6">
             <h2 class="text-3xl font-bold mb-12 text-center" x-text="t('nav_faq')"></h2>
@@ -125,7 +152,7 @@
                 translations: {
                     tc: {
                         nav_home: '首頁', nav_exp: '經歷', nav_faq: 'Q&A', contact_me: '聯繫我',
-                        badge: '準備申請 2026 職位',
+                        badge: '準備好申請 2026 職位',
                         hero_title: '用數據解讀金融<br><span class="gradient-text">用計算創造價值</span>',
                         hero_desc: '香港浸會大學商業計算及數據分析理學士(榮譽)，2025年南洋理工大學交換生。擁有溫氏投資、工行及律師事務所的多元化數據分析實習背景。',
                         view_portfolio: '查看作品集',
@@ -134,6 +161,10 @@
                         exp1_d1: '• 監控 15+ 家投資組合公司的財務狀況', exp1_d2: '• 更新投資回報預測，輔助決策支持',
                         exp2_title: '中國工商銀行', exp2_role: '數據分析實習生',
                         exp2_d1: '• 使用 Python/R 分析客戶投資行為', exp2_d2: '• 製作可視化報告支持市場營銷策略',
+                        // 項目相關
+                        section_projects: '項目經歷',
+                        project1_title: '項目標題 1', project1_desc: '項目描述 1',
+                        project2_title: '項目標題 2', project2_desc: '項目描述 2',        
                         q1: '你的核心技術棧有哪些？', a1: '我熟練掌握 Python 和 R 語言進行數據挖掘與分析，並能運用商業分析思維解決實際問題。',
                         q2: '為什麼選擇 BCDA 專業？', a2: '通過計算技術來量化風險和收益，是現代金融的核心競爭力。',
                         q3: '職業目標？', a3: '希望在金融科技、量化投資或投後管理領域深耕。',
@@ -141,7 +172,7 @@
                     },
                     zh: {
                         nav_home: '首页', nav_exp: '经历', nav_faq: 'Q&A', contact_me: '联系我',
-                        badge: '准备申请 2026 职位',
+                        badge: '准备好申请 2026 职位',
                         hero_title: '用数据解读金融<br><span class="gradient-text">用计算创造价值</span>',
                         hero_desc: '香港浸会大学商业计算及数据分析理学士(荣誉)，2025年南洋理工大学交换生。拥有温氏投资、工行及律所的多元化数据分析实习背景。',
                         view_portfolio: '查看作品集',
@@ -150,6 +181,10 @@
                         exp1_d1: '• 监控 15+ 家投资组合公司的财务状况', exp1_d2: '• 更新投资回报预测，辅助决策支持',
                         exp2_title: '中国工商银行', exp2_role: '数据分析实习生',
                         exp2_d1: '• 使用 Python/R 分析客户投资行为', exp2_d2: '• 制作可视化报告支持市场营销策略',
+                        // 项目相关
+                        section_projects: '项目经历',
+                        project1_title: '项目标题 1', project1_desc: '项目描述 1',
+                        project2_title: '项目标题 2', project2_desc: '项目描述 2',
                         q1: '你的核心技术栈有哪些？', a1: '我熟练掌握 Python 和 R 语言进行数据挖掘与分析，并能运用商业分析思维解决实际问题。',
                         q2: '为什么选择 BCDA 专业？', a2: '通过计算技术来量化风险和收益，是现代金融的核心竞争力。',
                         q3: '职业目标？', a3: '希望在金融科技、量化投资或投后管理领域深耕。',
@@ -166,6 +201,10 @@
                         exp1_d1: '• Monitored 15+ portfolio companies', exp1_d2: '• Updated ROI forecasts for decision support',
                         exp2_title: 'ICBC', exp2_role: 'Data Analytics Intern',
                         exp2_d1: '• Analyzed trends using Python/R', exp2_d2: '• Created visualizations for marketing',
+                        // 项目相关
+                        section_projects: 'Projects',
+                        project1_title: 'Project Title 1', project1_desc: 'Project Description 1',
+                        project2_title: 'Project Title 2', project2_desc: 'Project Description 2',
                         q1: 'What is your core tech stack?', a1: 'Proficient in Python and R for data mining and business analytics.',
                         q2: 'Why BCDA?', a2: 'Quantifying risk and return through computing is the core of modern finance.',
                         q3: 'Career goal?', a3: 'Aiming for Fintech, Quantitative Investment, or Portfolio Management.',
